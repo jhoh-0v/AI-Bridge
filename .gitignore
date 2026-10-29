@@ -2,6 +2,7 @@
 .env.*
 !.env.example
 public/coach-preview/
+public/coach-web/
 public/downloads/ai-bridge-coach.zip
 node_modules/
 __pycache__/
@@ -58,3 +59,5 @@ yarn-error.log*
 
 # Commit names-only configuration template.
 !.env.example
+
+/desktop/dist/

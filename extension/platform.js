@@ -1,8 +1,10 @@
 import { createSession, updateDraft, submitEvidence, advance, useHelp, outcome } from '../lib/coach/session.mjs';
 import { SITE_ORIGIN } from '../lib/coach/lesson.mjs';
-export const preview=typeof chrome==='undefined'||!chrome.runtime?.id;
+export const desktop=Boolean(window.aiBridge);
+export const preview=!desktop&&(typeof chrome==='undefined'||!chrome.runtime?.id);
 const KEY='aibridge-coach-preview-v1';
 export async function dispatch(message) {
+  if(desktop)return window.aiBridge.dispatch(message);
   if(!preview){const r=await chrome.runtime.sendMessage(message);if(!r?.ok)throw Error(r?.error||'확장 프로그램에 연결하지 못했어요. 다시 열어 주세요.');return r;}
   let state=JSON.parse(localStorage.getItem(KEY)||'{"session":null,"history":[]}');
   const save=()=>{localStorage.setItem(KEY,JSON.stringify(state));return state;};

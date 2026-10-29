@@ -1,0 +1,40 @@
+{
+  "name": "ai-bridge-desktop",
+  "version": "0.13.0",
+  "description": "실제 AI 화면에서 배우고 스스로 졸업하는 AI Bridge",
+  "author": "AI Bridge Team",
+  "private": true,
+  "main": "dist/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder --win portable --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "45.1.0",
+    "electron-builder": "26.18.0"
+  },
+  "build": {
+    "appId": "kr.aibridge.desktop",
+    "productName": "AI Bridge",
+    "copyright": "Copyright © 2026 AI Bridge Team",
+    "directories": {
+      "output": "../outputs/desktop"
+    },
+    "files": [
+      "dist/**/*",
+      "!dist/ui/qa-*",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "dist/icon.ico",
+      "signExecutable": false
+    },
+    "portable": {
+      "artifactName": "AI-Bridge-${version}-Windows.exe"
+    }
+  }
+}
