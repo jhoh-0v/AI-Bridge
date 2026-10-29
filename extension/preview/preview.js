@@ -1,0 +1,1 @@
+window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==document.getElementById('panel').contentWindow||e.data?.source!=='ai-bridge-preview')return;document.getElementById('mock').contentWindow.postMessage({source:'ai-bridge-preview',target:e.data.target},location.origin);});

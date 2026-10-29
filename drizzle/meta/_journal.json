@@ -8,6 +8,13 @@
       "when": 1793263247806,
       "tag": "0000_perfect_legion",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793271645385,
+      "tag": "0001_strange_ben_urich",
+      "breakpoints": true
     }
   ]
 }

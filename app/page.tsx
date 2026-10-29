@@ -1,2 +1,2 @@
-import BridgeClient from './bridge-client';
-export default function Page() { return <BridgeClient />; }
+import CoachHub from './coach-hub';
+export default function Page() { return <CoachHub />; }

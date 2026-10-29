@@ -1,0 +1,28 @@
+import { build } from 'esbuild';
+import { mkdir, readFile, writeFile, readdir, copyFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import JSZip from 'jszip';
+import sharp from 'sharp';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const out=path.join(root,'outputs','ai-bridge-coach'),preview=path.join(root,'public','coach-preview');
+await mkdir(out,{recursive:true});await mkdir(preview,{recursive:true});
+// Stable single-file bundles avoid stale dynamic chunks when users update unpacked builds.
+const common={bundle:true,minify:true,target:'chrome116',logLevel:'warning',legalComments:'none'};
+await build({...common,entryPoints:[path.join(root,'extension','panel.js')],outfile:path.join(out,'panel.js'),format:'esm',platform:'browser'});
+await build({...common,entryPoints:[path.join(root,'extension','worker.js')],outfile:path.join(out,'worker.js'),format:'esm',platform:'browser'});
+for(const name of ['content','site-bridge'])await build({...common,entryPoints:[path.join(root,'extension',name+'.js')],outfile:path.join(out,name+'.js'),format:'iife',platform:'browser'});
+for(const name of ['manifest.json','panel.html','panel.css'])await copyFile(path.join(root,'extension',name),path.join(out,name));
+await mkdir(path.join(out,'icons'),{recursive:true});
+const svg='<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"><rect width="128" height="128" rx="28" fill="#34654e"/><path d="M28 104V64a36 36 0 0 1 72 0v40M48 104V64a16 16 0 0 1 32 0v40" fill="none" stroke="#f2f5e7" stroke-width="10" stroke-linecap="round"/></svg>';
+for(const size of [16,32,48,128])await sharp(Buffer.from(svg)).resize(size,size).png().toFile(path.join(out,'icons',`${size}.png`));
+await copyFile(path.join(root,'extension','README.txt'),path.join(out,'README.txt'));
+const zip=new JSZip();
+const names=['manifest.json','panel.html','panel.css','panel.js','worker.js','content.js','site-bridge.js','README.txt',...[16,32,48,128].map(n=>`icons/${n}.png`)];
+for(const name of names)zip.file(name,await readFile(path.join(out,name)),{date:new Date('2026-10-29T00:00:00Z')});
+await mkdir(path.join(root,'public','downloads'),{recursive:true});
+await writeFile(path.join(root,'public','downloads','ai-bridge-coach.zip'),await zip.generateAsync({type:'nodebuffer',compression:'DEFLATE',compressionOptions:{level:6}}));
+for(const name of ['panel.js','panel.html','panel.css'])await copyFile(path.join(out,name),path.join(preview,name));
+await build({...common,entryPoints:[path.join(root,'extension','content.js')],outfile:path.join(preview,'content-preview.js'),format:'esm',platform:'browser'});
+for(const name of ['index.html','mock.html','preview.js','mock.js'])await copyFile(path.join(root,'extension','preview',name),path.join(preview,name));
+console.log('Coach extension, ZIP, and explicitly labeled preview built.');

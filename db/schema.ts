@@ -12,3 +12,11 @@ export const generations = sqliteTable('generations', {
   requestId: text('request_id').notNull(), phase: text('phase').notNull(), parentId: text('parent_id'),
   status: text('status').notNull(), data: text('data').notNull(), createdAt: text('created_at').notNull()
 }, t => [uniqueIndex('request_once').on(t.userId,t.requestId),index('generation_attempt').on(t.attemptId),index('generation_owner').on(t.userId,t.createdAt)]);
+
+export const coachRecords = sqliteTable('coach_records', {
+  id: text('id').primaryKey(), userId: text('user_id').notNull(), recordId: text('record_id').notNull(),
+  data: text('data').notNull(), contentHash: text('content_hash').notNull(), createdAt: text('created_at').notNull()
+}, t => [uniqueIndex('coach_record_owner').on(t.userId,t.recordId)]);
+export const coachRagUsage = sqliteTable('coach_rag_usage', {
+  id: text('id').primaryKey(), calls: integer('calls').notNull().default(0)
+});

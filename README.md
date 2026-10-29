@@ -1,8 +1,34 @@
 # AI Bridge
 
-AI 활용을 처음 배우는 사람을 위한 한국어 업무 실습 서비스입니다. 업무 선택 → 나의 첫 요청 → 원자료 확인 → 요청 수정 → 새로운 과제의 독립 실습으로 이어집니다.
+AI 활용을 처음 배우는 사람을 위한 한국어 업무 실습 서비스입니다. 목표는 상용 AI를 스스로 활용하는 것입니다. 웹은 진단·실습 연결·기록을 관리하고, Chrome 확장 프로그램은 실제 ChatGPT 옆에서 안내합니다.
 
 [공개 서비스](https://ai-bridge-lab-bd5373.mystic-grape-2563.chatgpt.site/)
+
+## 실습 코치 v4
+
+- `/`, `/coach`: 단순화한 학습 홈, 프로필 진단, 확장 설치, 실제 기록 비교, 근거 검색.
+- 실제 ChatGPT 화면 안내는 **엑셀 매출표 한 과제**부터 지원합니다. 기존 8개 분야는 `/practice-room`에 유지합니다.
+- 첫 결과는 모든 수준에서 내용 가이드 없이 보관합니다. 이후 **초급: 추천 템플릿 + 항목별 작성 안내 / 중급: 템플릿으로 직접 요청 / 고급: 템플릿 직접 선택 + 검증 / 최종 평가: 안내 없는 새 과제**로 진행합니다.
+- 버튼은 위치만 표시하며, 실제 첨부·작성·전송은 사용자가 합니다. 대화 내용을 읽거나 자동 수집하지 않습니다.
+- 직접 선택한 XLSX를 기기에서 읽고 원자료, 행별 수식, 월별 합계, 전체 합계, 각 수량 변경 시 재계산을 검사합니다. 첫 결과를 임의로 생성하지 않으며 사용자 제출 기록임을 표시합니다.
+- 독립 과제 5개 검사 + 확인 문항 2개 + 확장 내 도움 미사용으로 ‘엑셀 기초 과제 졸업’을 판정합니다. 외부 도움 사용, 실제 ChatGPT에서 생성했는지, 전반적인 AI 역량을 인증하는 제도가 아닙니다.
+- 로그인 후 명시적으로 ‘기록 가져오기’를 누르면 제출 요청·워크북 셀 내용·해시·도움 기록을 계정에 보관합니다. 동일 ID의 다른 기록으로 덮어쓸 수 없습니다.
+
+### 확장 프로그램 설치
+
+`npm run build:coach`는 `outputs/ai-bridge-coach`의 압축 해제된 확장과 `public/downloads/ai-bridge-coach.zip`을 만듭니다. 웹 빌드도 이 명령을 포함합니다. Chrome 116 이상에서 `chrome://extensions` → 개발자 모드 → 압축해제된 확장 프로그램 로드 → 해당 폴더 선택. ChatGPT 페이지에서 AI Bridge 아이콘을 눌러 사이드 패널을 엽니다. 웹사이트도 Chrome에서 새로고침해야 진단 연동이 됩니다. 권한은 storage, sidePanel, activeTab 및 ChatGPT/본 Site의 콘텐츠 스크립트로 한정합니다.
+
+`/coach-preview/index.html`은 동일 패널 코드의 **명시적인 안내 연습 화면**입니다. 실제 ChatGPT나 AI 생성 결과를 흉내 내어 제시하지 않습니다. 미리보기와 확장의 저장소는 분리되어 있습니다.
+
+### RAG
+
+`lib/coach/knowledge.mjs`의 출처·문단 ID·검토일·버전이 있는 15개 교육 문단을 BM25와 한국어 2글자 토큰으로 검색합니다. `retrieval.mjs`가 상위 근거를 질문에 결합하며, 확장에서 이를 복사해 실제 ChatGPT에 설명을 요청합니다. 검색 결과만 표시할 때는 AI 생성 설명으로 표시하지 않습니다. 공식 문서의 실시간 자동 수집이나 벡터 DB를 사용했다고 주장하지 않습니다.
+
+`POST /api/bridge/coach/rag`는 키 없이 검색을 제공합니다. `generate:true` + 로그인 + 서버 API 키가 있는 경우에만 Responses API로 근거 기반 설명을 생성합니다. 반환 문단 ID가 실제 검색 결과에 있는지 검사하고, 근거가 없거나 호출·인용 검증이 실패하면 생성된 답변을 보여주지 않습니다. 계정당 UTC 날짜 기준 최대 20회, 실패 요청도 집계하며 자동 재호출하지 않습니다. **실제 유료 API 호출은 키 설정 미완료로 검증하지 않았습니다.**
+
+검사 한계: 3MB·6시트·200행/시트·20열 이내 XLSX. 일반 셀 참조 및 지원 함수는 `extension/README.txt` 참조. 구조적 참조/미지원 함수는 실패 점수와 별도로 수동 확인 필요를 표시합니다. 사용자가 제출한 기록은 서비스 제공자의 생성 증명이 아니며, 전후 비교만으로 인과적 학습 효과를 입증하지 않습니다.
+
+아래는 기존 `/practice-room`의 내부 생성 방식과 8개 분야에 관한 설명입니다.
 
 ## 8가지 업무
 
@@ -46,6 +72,7 @@ Node.js 22.13 이상이 필요합니다. 검증 환경은 Node.js 24입니다.
 npm ci
 npm run build
 node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_perfect_legion.sql
+node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0001_strange_ben_urich.sql
 npm run dev -- --port 5173 --hostname 127.0.0.1
 ```
 
