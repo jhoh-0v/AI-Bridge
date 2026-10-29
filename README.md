@@ -1,6 +1,9 @@
-# AI Bridge prototype
+# AI Bridge
 
-상용 AI 활용을 연습하는 한국어 웹 프로토타입입니다.
+ChatGPT, Gemini, Claude를 스스로 활용하는 방법을 연습하는 해커톤용 한국어 웹 프로토타입입니다.
+AI Bridge는 업무 목적 정리, 요청 작성, 결과 확인, 후속 요청, 독립 실습을 안내합니다. 실제 업무는 사용자가 선택한 상용 AI에서 수행합니다.
+
+[공개 데모 열기](https://ai-bridge-lab-bd5373.mystic-grape-2563.chatgpt.site/)
 
 ## 실행
 
@@ -9,6 +12,13 @@
     python -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 별도 설치나 빌드가 필요하지 않습니다. 소스는 dist/index.html, dist/styles.css, dist/app.js 에 있습니다.
+
+## 구성
+
+- `dist/index.html`: 화면 구조
+- `dist/styles.css`: 반응형 스타일
+- `dist/app.js`: 연습 흐름, 예시 자료, 브라우저 내 기록
+- `.openai/hosting.json`: Sites 배포 설정
 
 ## 구현된 흐름
 
