@@ -1,0 +1,21 @@
+{
+  "sources": {
+    "recording1": "C:/Users/ojh34/AppData/Local/Packages/Microsoft.ScreenSketch_8wekyb3d8bbwe/TempState/Recordings/20261029-2219-31.9249949.mp4",
+    "recording2": "C:/Users/ojh34/AppData/Local/Packages/Microsoft.ScreenSketch_8wekyb3d8bbwe/TempState/Recordings/20261029-2227-56.5128011.mp4"
+  },
+  "clips": [
+    {"source":"recording1","start":48,"end":55,"caption":"AI Bridge · 실제 ChatGPT에서 요청하고, 결과를 검증하는 법을 배웁니다"},
+    {"source":"recording1","start":104,"end":130,"caption":"BEFORE · 짧은 요청으로 받은 실제 결과 — 시각화와 비교표는 이미 있습니다"},
+    {"source":"recording1","start":153,"end":176,"caption":"AI Bridge의 피드백 · 원본 값과 순이익률 출처를 직접 대조하도록 안내합니다"},
+    {"source":"recording1","start":184,"end":192,"caption":"확인한 내용을 바탕으로 수정할 조건을 생각합니다"},
+    {"source":"recording1","start":199,"end":216,"caption":"요청 개선 · 한 장 요약, 원본 대조표, 출처와 검증 기준을 직접 입력합니다"},
+    {"source":"recording1","start":216,"end":238,"caption":"실제 ChatGPT에 전송 · 코치가 새 요청을 읽고 피드백을 갱신합니다"},
+    {"source":"recording1","start":235,"end":238,"caption":"실제 생성 9분 22초 · 대기·앱 점검 구간을 생략하고 같은 대화로 이어집니다"},
+    {"source":"recording2","start":817,"end":824,"caption":"AFTER · 같은 대화에서 생성된 새 파일을 읽고 맞춤 피드백을 제공합니다"},
+    {"source":"recording2","start":832,"end":850,"caption":"한 장 요약 추가 · 핵심 지표, 차트, 출처 비교를 함께 보여줍니다"},
+    {"source":"recording2","start":850,"end":875,"caption":"원본 대조표 추가 · 15개 값의 출처, 차이, 확인 상태를 수식으로 연결했습니다"},
+    {"source":"recording2","start":878,"end":900,"caption":"원본 연결 수식을 직접 확인한 뒤, 수정 결과를 학습 기록에 보관합니다"},
+    {"source":"recording2","start":900,"end":909,"caption":"비포·애프터 기록 · 실제 요청과 실제 받은 파일을 함께 보관합니다"},
+    {"source":"recording2","start":936,"end":947,"caption":"검증 결과 · 원본 262개 셀 보존 / 원본 간 차이는 수정하지 않고 표시합니다"}
+  ]
+}

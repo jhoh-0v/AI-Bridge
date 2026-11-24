@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-10-29T22:48:20.565Z",
+  "durationSeconds": 198,
+  "resolution": "1920x1200",
+  "fps": 30,
+  "audio": "none",
+  "captions": "Korean, burned in",
+  "bytes": 5739121,
+  "sha256": "d6923a23bf1438e102ce9d2e76909aff4545a4adabf4ab3c157e097c5f406a30",
+  "decodeErrors": 0,
+  "visualChecks": [
+    "opening",
+    "coach and request",
+    "generation transition",
+    "summary",
+    "audit formulas",
+    "ending"
+  ],
+  "applicationVersion": "0.16.2",
+  "testsPassed": 171,
+  "independentPracticeCompleted": false
+}

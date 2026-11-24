@@ -1,0 +1,17 @@
+{
+  "createdAt": "2026-10-30T07:12:34.3150025+09:00",
+  "appVersion": "0.16.0",
+  "sessionId": "fef5612d-5a0c-46d8-8458-ec58e4affa24",
+  "source": "source.xlsx",
+  "before": "before.xlsx",
+  "beforePrompt": "재무제표를 활용한 시각화 자료",
+  "beforeModel": "",
+  "beforeTurnId": "view-mvu0xlvg-2",
+  "beforeOrigin": "Existing actual ChatGPT result, preserved without modification before the recorded revision",
+  "coachTitle": "비교표와 원자료 대조",
+  "coachObservation": "완성된 XLSX에는 5개년 비교표와 6개 차트가 있습니다. 확인된 매출액·영업이익·당기순이익은 원자료 값과 일치합니다. 별도 주요지표의 2025년 순이익률은 6.95%로, 손익계산서 기반 7.18%와 차이가 표시돼 있습니다.",
+  "coachAction": "Excel에서 ‘5개년 비교’의 항목별 연도와 단위를 원본 ‘데이타’ 시트의 같은 항목 및 연도 셀과 대조하고, 두 순이익률 값은 각각의 원본 위치와 함께 확인하세요.",
+  "coachResponseId": "01a189a1-7538-7ac3-b8a2-e3d6e4e56189",
+  "recordingStatus": "Waiting for Snipping Tool access",
+  "afterStatus": "Not generated yet"
+}

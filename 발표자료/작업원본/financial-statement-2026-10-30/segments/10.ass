@@ -1,0 +1,10 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1200
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Malgun Gothic,30,&H00F2F8F4,&H00FFFFFF,&H000B1D18,&H000B1D18,0,0,0,0,100,100,0,0,1,0,0,2,60,60,12,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,1:00:00.00,Caption,,0,0,0,,원본 연결 수식을 직접 확인한 뒤, 수정 결과를 학습 기록에 보관합니다

@@ -1,0 +1,1232 @@
+{
+  "verifiedAt": "2026-10-29T22:33:49.294Z",
+  "sourceSha256": "1617d75e9f49d41cbeb77f992659ece4ba56b5a3699715958fcd0fa8866bea8e",
+  "beforeSha256": "6d137786cd060d65f56e6e05d1776994f1ad4dbddcc811df98e0e095cf3de070",
+  "afterSha256": "281c78fa1be8c87099ec8a4119c1d9a4a4c226ba6f84139bc15a293529515177",
+  "before": {
+    "sheets": 4,
+    "cells": 699,
+    "formulas": 297,
+    "charts": 6
+  },
+  "after": {
+    "sheets": 6,
+    "cells": 936,
+    "formulas": 413,
+    "charts": 8
+  },
+  "sheetNames": [
+    "한눈에 보기",
+    "원본 대조",
+    "재무 대시보드",
+    "5개년 비교",
+    "차트 데이터",
+    "데이타"
+  ],
+  "sourcePreserved": true,
+  "sourceDifferences": [],
+  "priorSheetChanges": [],
+  "formulaErrors": [],
+  "addedSheets": [
+    {
+      "name": "한눈에 보기",
+      "cells": [
+        {
+          "address": "A1",
+          "value": "삼성E&A  |  2021–2025 재무 한눈에 보기"
+        },
+        {
+          "address": "A3",
+          "value": "2025 핵심지표 · 5개년 추이 · 원본 대조  |  금액 단위: 십억원  /  비율: %  /  비율 차이: %p"
+        },
+        {
+          "address": "A4",
+          "value": "자료 식별 주의: 첨부명은 ‘삼성전자 재무제표’이나, 원본 ‘데이타’!B2의 회사명은 ‘삼성E&A’입니다."
+        },
+        {
+          "address": "A6",
+          "value": "매출액 · 2025"
+        },
+        {
+          "address": "E6",
+          "value": "영업이익 · 2025"
+        },
+        {
+          "address": "I6",
+          "value": "당기순이익 · 2025"
+        },
+        {
+          "address": "M6",
+          "value": "기말현금 · 2025"
+        },
+        {
+          "address": "A7",
+          "value": 9028.76908365,
+          "formula": "'5개년 비교'!G6",
+          "format": "#,##0.0;[Red](#,##0.0);\"-\""
+        },
+        {
+          "address": "E7",
+          "value": 792.078846892,
+          "formula": "'5개년 비교'!G8",
+          "format": "#,##0.0;[Red](#,##0.0);\"-\""
+        },
+        {
+          "address": "I7",
+          "value": 648.307939623,
+          "formula": "'5개년 비교'!G9",
+          "format": "#,##0.0;[Red](#,##0.0);\"-\""
+        },
+        {
+          "address": "M7",
+          "value": 861.796626374,
+          "formula": "'5개년 비교'!G21",
+          "format": "#,##0.0;[Red](#,##0.0);\"-\""
+        },
+        {
+          "address": "A9",
+          "value": "전년 대비"
+        },
+        {
+          "address": "E9",
+          "value": "전년 대비"
+        },
+        {
+          "address": "I9",
+          "value": "전년 대비"
+        },
+        {
+          "address": "M9",
+          "value": "전년 대비"
+        },
+        {
+          "address": "A10",
+          "value": -9.409295436446785,
+          "formula": "'5개년 비교'!I6",
+          "format": "0.0\"%\";[Red](0.0\"%\");\"-\""
+        },
+        {
+          "address": "E10",
+          "value": -18.477838596298934,
+          "formula": "'5개년 비교'!I8",
+          "format": "0.0\"%\";[Red](0.0\"%\");\"-\""
+        },
+        {
+          "address": "I10",
+          "value": 1.508674378099184,
+          "formula": "'5개년 비교'!I9",
+          "format": "0.0\"%\";[Red](0.0\"%\");\"-\""
+        },
+        {
+          "address": "M10",
+          "value": -66.79874178258791,
+          "formula": "'5개년 비교'!I21",
+          "format": "0.0\"%\";[Red](0.0\"%\");\"-\""
+        },
+        {
+          "address": "A12",
+          "value": "01  ·  5개년 매출 및 수익성 핵심 추이"
+        },
+        {
+          "address": "A13",
+          "value": "매출액 | 십억원"
+        },
+        {
+          "address": "I13",
+          "value": "영업이익률 · 순이익률 | %"
+        },
+        {
+          "address": "A27",
+          "value": "02  ·  2025년 순이익률 출처 비교  (원본 수치 그대로 유지)"
+        },
+        {
+          "address": "A28",
+          "value": "손익계산서 · 데이타!H30"
+        },
+        {
+          "address": "E28",
+          "value": "별도 주요지표 · 데이타!H47"
+        },
+        {
+          "address": "I28",
+          "value": "직접 계산 · H24÷H19"
+        },
+        {
+          "address": "M28",
+          "value": "대시보드 적용 · G9"
+        },
+        {
+          "address": "A29",
+          "value": 7.1804687174579165,
+          "formula": "'데이타'!H30",
+          "format": "0.0000\"%\";[Red](0.0000\"%\");\"-\""
+        },
+        {
+          "address": "E29",
+          "value": 6.95,
+          "formula": "'데이타'!H47",
+          "format": "0.0000\"%\";[Red](0.0000\"%\");\"-\""
+        },
+        {
+          "address": "I29",
+          "value": 7.1804687174579165,
+          "formula": "IFERROR('데이타'!H24/'데이타'!H19*100,0)",
+          "format": "0.0000\"%\";[Red](0.0000\"%\");\"-\""
+        },
+        {
+          "address": "M29",
+          "value": 7.1804687174579165,
+          "formula": "'차트 데이터'!G9",
+          "format": "0.0000\"%\";[Red](0.0000\"%\");\"-\""
+        },
+        {
+          "address": "A31",
+          "value": "대시보드 기준: 당기순이익 ÷ 매출액 × 100 (차트 데이터!G9). H30과 계산값은 일치하며 H47은 다릅니다."
+        },
+        {
+          "address": "A32",
+          "value": "2025 손익계산서−별도 지표 차이: 0.2305 %p  ·  차이의 원인은 확인되지 않았습니다.",
+          "formula": "\"2025 손익계산서−별도 지표 차이: \"&TEXT('원본 대조'!E31,\"0.0000\")&\" %p  ·  차이의 원인은 확인되지 않았습니다.\""
+        },
+        {
+          "address": "A34",
+          "value": "03  ·  원본 확인 및 해석 주의사항"
+        },
+        {
+          "address": "A35",
+          "value": "① 회사 식별: 첨부 파일명 ‘삼성전자’ ↔ 원본 데이타!B2 ‘삼성E&A’. 분석 대상은 원본에 표시된 회사입니다."
+        },
+        {
+          "address": "A36",
+          "value": "② 순이익률: 2025년 데이타!H30 ≠ H47. 대시보드는 순이익/매출 계산값을 사용하며 원인은 단정하지 않습니다."
+        },
+        {
+          "address": "A37",
+          "value": "③ 재무상태표: 2025 자산총계 − (부채총계 + 자본총계) = -0.5576 십억원 · 원본 차이, 검증 필요.",
+          "formula": "\"③ 재무상태표: 2025 자산총계 − (부채총계 + 자본총계) = \"&TEXT('원본 대조'!E38,\"0.0000\")&\" 십억원 · 원본 차이, 검증 필요.\""
+        },
+        {
+          "address": "A38",
+          "value": "④ 원본 출처·셀 주소·원본/보고서 비교·차이와 원본 이동 링크는 [원본 대조] 시트에서 확인할 수 있습니다."
+        },
+        {
+          "address": "A40",
+          "value": "SOURCE  데이타 (원본 유지) → 차트 데이터 (파생 수식) → 5개년 비교 → 본 요약    |    검증: 원본 대조"
+        }
+      ]
+    },
+    {
+      "name": "원본 대조",
+      "cells": [
+        {
+          "address": "A1",
+          "value": "원본 대조  |  2021–2025 재무지표 검증"
+        },
+        {
+          "address": "A3",
+          "value": "동일 연도 · 동일 단위(십억원)로 원본 [데이타]와 보고서 [5개년 비교]를 직접 연결하여 대조합니다."
+        },
+        {
+          "address": "A4",
+          "value": "차이(십억원) = 보고서 값 − 원본 값  |  셀 주소를 클릭하면 해당 셀로 이동합니다."
+        },
+        {
+          "address": "F4",
+          "value": "일치 허용 오차  ·  십억원"
+        },
+        {
+          "address": "I4",
+          "value": 1e-9,
+          "format": "0.0E+00"
+        },
+        {
+          "address": "A5",
+          "value": "01  ·  핵심 손익 항목 원본값·보고서값·차이 (3지표 × 5개년)"
+        },
+        {
+          "address": "A6",
+          "value": "지표"
+        },
+        {
+          "address": "B6",
+          "value": "연도"
+        },
+        {
+          "address": "C6",
+          "value": "단위"
+        },
+        {
+          "address": "D6",
+          "value": "원본 시트·셀 ↗"
+        },
+        {
+          "address": "E6",
+          "value": "원본 값"
+        },
+        {
+          "address": "F6",
+          "value": "보고서 값"
+        },
+        {
+          "address": "G6",
+          "value": "차이(보고서−원본)"
+        },
+        {
+          "address": "H6",
+          "value": "확인 상태"
+        },
+        {
+          "address": "I6",
+          "value": "보고서 셀 ↗"
+        },
+        {
+          "address": "A7",
+          "value": "매출액"
+        },
+        {
+          "address": "B7",
+          "value": "2021",
+          "formula": "'데이타'!D18",
+          "format": "0"
+        },
+        {
+          "address": "C7",
+          "value": "십억원",
+          "formula": "'데이타'!$C$19"
+        },
+        {
+          "address": "D7",
+          "value": "데이타!D19 ↗"
+        },
+        {
+          "address": "E7",
+          "value": 7486.696121177,
+          "formula": "'데이타'!D19",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F7",
+          "value": 7486.696121177,
+          "formula": "'5개년 비교'!C6",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G7",
+          "value": 0,
+          "formula": "F7-E7",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H7",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E7),ISNUMBER(F7),ABS(G7)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I7",
+          "value": "5개년 비교!C6 ↗"
+        },
+        {
+          "address": "A8",
+          "value": "매출액"
+        },
+        {
+          "address": "B8",
+          "value": "2022",
+          "formula": "'데이타'!E18",
+          "format": "0"
+        },
+        {
+          "address": "C8",
+          "value": "십억원",
+          "formula": "'데이타'!$C$19"
+        },
+        {
+          "address": "D8",
+          "value": "데이타!E19 ↗"
+        },
+        {
+          "address": "E8",
+          "value": 10054.344625186,
+          "formula": "'데이타'!E19",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F8",
+          "value": 10054.344625186,
+          "formula": "'5개년 비교'!D6",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G8",
+          "value": 0,
+          "formula": "F8-E8",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H8",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E8),ISNUMBER(F8),ABS(G8)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I8",
+          "value": "5개년 비교!D6 ↗"
+        },
+        {
+          "address": "A9",
+          "value": "매출액"
+        },
+        {
+          "address": "B9",
+          "value": "2023",
+          "formula": "'데이타'!F18",
+          "format": "0"
+        },
+        {
+          "address": "C9",
+          "value": "십억원",
+          "formula": "'데이타'!$C$19"
+        },
+        {
+          "address": "D9",
+          "value": "데이타!F19 ↗"
+        },
+        {
+          "address": "E9",
+          "value": 10624.917993595,
+          "formula": "'데이타'!F19",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F9",
+          "value": 10624.917993595,
+          "formula": "'5개년 비교'!E6",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G9",
+          "value": 0,
+          "formula": "F9-E9",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H9",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E9),ISNUMBER(F9),ABS(G9)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I9",
+          "value": "5개년 비교!E6 ↗"
+        },
+        {
+          "address": "A10",
+          "value": "매출액"
+        },
+        {
+          "address": "B10",
+          "value": "2024",
+          "formula": "'데이타'!G18",
+          "format": "0"
+        },
+        {
+          "address": "C10",
+          "value": "십억원",
+          "formula": "'데이타'!$C$19"
+        },
+        {
+          "address": "D10",
+          "value": "데이타!G19 ↗"
+        },
+        {
+          "address": "E10",
+          "value": 9966.551344477,
+          "formula": "'데이타'!G19",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F10",
+          "value": 9966.551344477,
+          "formula": "'5개년 비교'!F6",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G10",
+          "value": 0,
+          "formula": "F10-E10",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H10",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E10),ISNUMBER(F10),ABS(G10)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I10",
+          "value": "5개년 비교!F6 ↗"
+        },
+        {
+          "address": "A11",
+          "value": "매출액"
+        },
+        {
+          "address": "B11",
+          "value": "2025",
+          "formula": "'데이타'!H18",
+          "format": "0"
+        },
+        {
+          "address": "C11",
+          "value": "십억원",
+          "formula": "'데이타'!$C$19"
+        },
+        {
+          "address": "D11",
+          "value": "데이타!H19 ↗"
+        },
+        {
+          "address": "E11",
+          "value": 9028.76908365,
+          "formula": "'데이타'!H19",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F11",
+          "value": 9028.76908365,
+          "formula": "'5개년 비교'!G6",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G11",
+          "value": 0,
+          "formula": "F11-E11",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H11",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E11),ISNUMBER(F11),ABS(G11)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I11",
+          "value": "5개년 비교!G6 ↗"
+        },
+        {
+          "address": "A12",
+          "value": "영업이익"
+        },
+        {
+          "address": "B12",
+          "value": "2021",
+          "formula": "'데이타'!D18",
+          "format": "0"
+        },
+        {
+          "address": "C12",
+          "value": "십억원",
+          "formula": "'데이타'!$C$22"
+        },
+        {
+          "address": "D12",
+          "value": "데이타!D22 ↗"
+        },
+        {
+          "address": "E12",
+          "value": 503.288807347,
+          "formula": "'데이타'!D22",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F12",
+          "value": 503.288807347,
+          "formula": "'5개년 비교'!C8",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G12",
+          "value": 0,
+          "formula": "F12-E12",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H12",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E12),ISNUMBER(F12),ABS(G12)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I12",
+          "value": "5개년 비교!C8 ↗"
+        },
+        {
+          "address": "A13",
+          "value": "영업이익"
+        },
+        {
+          "address": "B13",
+          "value": "2022",
+          "formula": "'데이타'!E18",
+          "format": "0"
+        },
+        {
+          "address": "C13",
+          "value": "십억원",
+          "formula": "'데이타'!$C$22"
+        },
+        {
+          "address": "D13",
+          "value": "데이타!E22 ↗"
+        },
+        {
+          "address": "E13",
+          "value": 702.942994188,
+          "formula": "'데이타'!E22",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F13",
+          "value": 702.942994188,
+          "formula": "'5개년 비교'!D8",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G13",
+          "value": 0,
+          "formula": "F13-E13",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H13",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E13),ISNUMBER(F13),ABS(G13)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I13",
+          "value": "5개년 비교!D8 ↗"
+        },
+        {
+          "address": "A14",
+          "value": "영업이익"
+        },
+        {
+          "address": "B14",
+          "value": "2023",
+          "formula": "'데이타'!F18",
+          "format": "0"
+        },
+        {
+          "address": "C14",
+          "value": "십억원",
+          "formula": "'데이타'!$C$22"
+        },
+        {
+          "address": "D14",
+          "value": "데이타!F22 ↗"
+        },
+        {
+          "address": "E14",
+          "value": 993.128866188,
+          "formula": "'데이타'!F22",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F14",
+          "value": 993.128866188,
+          "formula": "'5개년 비교'!E8",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G14",
+          "value": 0,
+          "formula": "F14-E14",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H14",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E14),ISNUMBER(F14),ABS(G14)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I14",
+          "value": "5개년 비교!E8 ↗"
+        },
+        {
+          "address": "A15",
+          "value": "영업이익"
+        },
+        {
+          "address": "B15",
+          "value": "2024",
+          "formula": "'데이타'!G18",
+          "format": "0"
+        },
+        {
+          "address": "C15",
+          "value": "십억원",
+          "formula": "'데이타'!$C$22"
+        },
+        {
+          "address": "D15",
+          "value": "데이타!G22 ↗"
+        },
+        {
+          "address": "E15",
+          "value": 971.611686017,
+          "formula": "'데이타'!G22",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F15",
+          "value": 971.611686017,
+          "formula": "'5개년 비교'!F8",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G15",
+          "value": 0,
+          "formula": "F15-E15",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H15",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E15),ISNUMBER(F15),ABS(G15)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I15",
+          "value": "5개년 비교!F8 ↗"
+        },
+        {
+          "address": "A16",
+          "value": "영업이익"
+        },
+        {
+          "address": "B16",
+          "value": "2025",
+          "formula": "'데이타'!H18",
+          "format": "0"
+        },
+        {
+          "address": "C16",
+          "value": "십억원",
+          "formula": "'데이타'!$C$22"
+        },
+        {
+          "address": "D16",
+          "value": "데이타!H22 ↗"
+        },
+        {
+          "address": "E16",
+          "value": 792.078846892,
+          "formula": "'데이타'!H22",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F16",
+          "value": 792.078846892,
+          "formula": "'5개년 비교'!G8",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G16",
+          "value": 0,
+          "formula": "F16-E16",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H16",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E16),ISNUMBER(F16),ABS(G16)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I16",
+          "value": "5개년 비교!G8 ↗"
+        },
+        {
+          "address": "A17",
+          "value": "당기순이익"
+        },
+        {
+          "address": "B17",
+          "value": "2021",
+          "formula": "'데이타'!D18",
+          "format": "0"
+        },
+        {
+          "address": "C17",
+          "value": "십억원",
+          "formula": "'데이타'!$C$24"
+        },
+        {
+          "address": "D17",
+          "value": "데이타!D24 ↗"
+        },
+        {
+          "address": "E17",
+          "value": 351.071466376,
+          "formula": "'데이타'!D24",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F17",
+          "value": 351.071466376,
+          "formula": "'5개년 비교'!C9",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G17",
+          "value": 0,
+          "formula": "F17-E17",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H17",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E17),ISNUMBER(F17),ABS(G17)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I17",
+          "value": "5개년 비교!C9 ↗"
+        },
+        {
+          "address": "A18",
+          "value": "당기순이익"
+        },
+        {
+          "address": "B18",
+          "value": "2022",
+          "formula": "'데이타'!E18",
+          "format": "0"
+        },
+        {
+          "address": "C18",
+          "value": "십억원",
+          "formula": "'데이타'!$C$24"
+        },
+        {
+          "address": "D18",
+          "value": "데이타!E24 ↗"
+        },
+        {
+          "address": "E18",
+          "value": 595.319035026,
+          "formula": "'데이타'!E24",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F18",
+          "value": 595.319035026,
+          "formula": "'5개년 비교'!D9",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G18",
+          "value": 0,
+          "formula": "F18-E18",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H18",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E18),ISNUMBER(F18),ABS(G18)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I18",
+          "value": "5개년 비교!D9 ↗"
+        },
+        {
+          "address": "A19",
+          "value": "당기순이익"
+        },
+        {
+          "address": "B19",
+          "value": "2023",
+          "formula": "'데이타'!F18",
+          "format": "0"
+        },
+        {
+          "address": "C19",
+          "value": "십억원",
+          "formula": "'데이타'!$C$24"
+        },
+        {
+          "address": "D19",
+          "value": "데이타!F24 ↗"
+        },
+        {
+          "address": "E19",
+          "value": 695.607943011,
+          "formula": "'데이타'!F24",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F19",
+          "value": 695.607943011,
+          "formula": "'5개년 비교'!E9",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G19",
+          "value": 0,
+          "formula": "F19-E19",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H19",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E19),ISNUMBER(F19),ABS(G19)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I19",
+          "value": "5개년 비교!E9 ↗"
+        },
+        {
+          "address": "A20",
+          "value": "당기순이익"
+        },
+        {
+          "address": "B20",
+          "value": "2024",
+          "formula": "'데이타'!G18",
+          "format": "0"
+        },
+        {
+          "address": "C20",
+          "value": "십억원",
+          "formula": "'데이타'!$C$24"
+        },
+        {
+          "address": "D20",
+          "value": "데이타!G24 ↗"
+        },
+        {
+          "address": "E20",
+          "value": 638.67245198,
+          "formula": "'데이타'!G24",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F20",
+          "value": 638.67245198,
+          "formula": "'5개년 비교'!F9",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G20",
+          "value": 0,
+          "formula": "F20-E20",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H20",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E20),ISNUMBER(F20),ABS(G20)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I20",
+          "value": "5개년 비교!F9 ↗"
+        },
+        {
+          "address": "A21",
+          "value": "당기순이익"
+        },
+        {
+          "address": "B21",
+          "value": "2025",
+          "formula": "'데이타'!H18",
+          "format": "0"
+        },
+        {
+          "address": "C21",
+          "value": "십억원",
+          "formula": "'데이타'!$C$24"
+        },
+        {
+          "address": "D21",
+          "value": "데이타!H24 ↗"
+        },
+        {
+          "address": "E21",
+          "value": 648.307939623,
+          "formula": "'데이타'!H24",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "F21",
+          "value": 648.307939623,
+          "formula": "'5개년 비교'!G9",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G21",
+          "value": 0,
+          "formula": "F21-E21",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "H21",
+          "value": "일치",
+          "formula": "IF(AND(ISNUMBER(E21),ISNUMBER(F21),ABS(G21)<=$I$4),\"일치\",\"검증 필요\")"
+        },
+        {
+          "address": "I21",
+          "value": "5개년 비교!G9 ↗"
+        },
+        {
+          "address": "A23",
+          "value": "02  ·  2025 순이익률 출처 3중 대조 및 대시보드 적용 기준"
+        },
+        {
+          "address": "A24",
+          "value": "2025 순이익률은 원본 손익계산서의 H30, 별도 주요지표의 H47, 당기순이익÷매출액 계산값을 각각 확인해야 합니다."
+        },
+        {
+          "address": "A25",
+          "value": "구분"
+        },
+        {
+          "address": "B25",
+          "value": "값의 출처 (원본 셀 참조)"
+        },
+        {
+          "address": "E25",
+          "value": "순이익률 · %"
+        },
+        {
+          "address": "G25",
+          "value": "활용·검증"
+        },
+        {
+          "address": "I25",
+          "value": "원본 이동 ↗"
+        },
+        {
+          "address": "A26",
+          "value": "손익계산서"
+        },
+        {
+          "address": "B26",
+          "value": "데이타!H30"
+        },
+        {
+          "address": "E26",
+          "value": 7.1804687174579165,
+          "formula": "'데이타'!H30",
+          "format": "0.0000\"%\";[Red](0.0000\"%\");\"-\""
+        },
+        {
+          "address": "G26",
+          "value": "손익계산서 주요지표"
+        },
+        {
+          "address": "I26",
+          "value": "H30 이동 ↗"
+        },
+        {
+          "address": "A27",
+          "value": "별도 주요지표"
+        },
+        {
+          "address": "B27",
+          "value": "데이타!H47"
+        },
+        {
+          "address": "E27",
+          "value": 6.95,
+          "formula": "'데이타'!H47",
+          "format": "0.0000\"%\";[Red](0.0000\"%\");\"-\""
+        },
+        {
+          "address": "G27",
+          "value": "검증 대상: 값 다름"
+        },
+        {
+          "address": "I27",
+          "value": "H47 이동 ↗"
+        },
+        {
+          "address": "A28",
+          "value": "직접 계산"
+        },
+        {
+          "address": "B28",
+          "value": "데이타!H24 ÷ H19"
+        },
+        {
+          "address": "E28",
+          "value": 7.1804687174579165,
+          "formula": "IFERROR('데이타'!H24/'데이타'!H19*100,0)",
+          "format": "0.0000\"%\";[Red](0.0000\"%\");\"-\""
+        },
+        {
+          "address": "G28",
+          "value": "순이익÷매출액×100"
+        },
+        {
+          "address": "I28",
+          "value": "H24 이동 ↗"
+        },
+        {
+          "address": "A29",
+          "value": "대시보드 사용"
+        },
+        {
+          "address": "B29",
+          "value": "차트 데이터!G9"
+        },
+        {
+          "address": "E29",
+          "value": 7.1804687174579165,
+          "formula": "'차트 데이터'!G9",
+          "format": "0.0000\"%\";[Red](0.0000\"%\");\"-\""
+        },
+        {
+          "address": "G29",
+          "value": "계산 수익률을 사용"
+        },
+        {
+          "address": "I29",
+          "value": "G9 이동 ↗"
+        },
+        {
+          "address": "A31",
+          "value": "H30 − H47 차이"
+        },
+        {
+          "address": "B31",
+          "value": "원본 두 표시값의 차이 · %p"
+        },
+        {
+          "address": "E31",
+          "value": 0.2304687174579163,
+          "formula": "E26-E27",
+          "format": "0.0000\" %p\";[Red](0.0000\" %p\");\"-\""
+        },
+        {
+          "address": "G31",
+          "value": "검증 필요",
+          "formula": "IF(ABS(E31)>$I$4,\"검증 필요\",\"일치\")"
+        },
+        {
+          "address": "I31",
+          "value": "대조 원본 ↗"
+        },
+        {
+          "address": "A32",
+          "value": "대시보드−계산"
+        },
+        {
+          "address": "B32",
+          "value": "대시보드 적용값 − 직접 계산값 · %p"
+        },
+        {
+          "address": "E32",
+          "value": 0,
+          "formula": "E29-E28",
+          "format": "0.0000\" %p\";[Red](0.0000\" %p\");\"-\""
+        },
+        {
+          "address": "G32",
+          "value": "일치",
+          "formula": "IF(ABS(E32)>$I$4,\"검증 필요\",\"일치\")"
+        },
+        {
+          "address": "I32",
+          "value": "적용값 ↗"
+        },
+        {
+          "address": "A33",
+          "value": "검증 주의: 원본 H30과 H47의 2025 순이익률은 서로 다릅니다. 원인에 대한 근거는 제공되지 않았습니다.\n원본은 수정하지 않았으며, 기존 수익성 차트는 '차트 데이터'!G9(당기순이익÷매출액×100) 기준을 유지합니다."
+        },
+        {
+          "address": "A36",
+          "value": "03  ·  추가 검증: 2025 재무상태표 차이 (원본 유지)"
+        },
+        {
+          "address": "A37",
+          "value": "원본 자산총계"
+        },
+        {
+          "address": "C37",
+          "value": 10039,
+          "formula": "'데이타'!H8",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "E37",
+          "value": "원본 부채총계 + 자본총계"
+        },
+        {
+          "address": "G37",
+          "value": 10039.557572475,
+          "formula": "'데이타'!H12+'데이타'!H16",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "A38",
+          "value": "자산총계 − (부채총계 + 자본총계)"
+        },
+        {
+          "address": "E38",
+          "value": -0.557572474999688,
+          "formula": "'데이타'!H8-('데이타'!H12+'데이타'!H16)",
+          "format": "#,##0.000000;[Red](#,##0.000000);\"-\""
+        },
+        {
+          "address": "G38",
+          "value": "검증 필요",
+          "formula": "IF(ABS(E38)>$I$4,\"검증 필요\",\"일치\")"
+        },
+        {
+          "address": "A39",
+          "value": "검증 출처: 데이타!H8(자산), H12(부채), H16(자본). 출처 간 차이가 있으므로 외부 근거 없이 값을 조정하지 않습니다."
+        },
+        {
+          "address": "A41",
+          "value": "보고서 값: '5개년 비교'의 해당 셀  |  원본 값: '데이타'의 해당 셀  |  E·F·G 및 비율 비교 행은 수식 연결"
+        }
+      ]
+    }
+  ],
+  "printAreas": [
+    "&#39;한눈에 보기&#39;!$A$1:$P$40"
+  ],
+  "sheetMetadata": [
+    {
+      "part": "xl/worksheets/sheet1.xml",
+      "links": 1,
+      "conditionalFormats": 0,
+      "pageSetup": "<x:pageSetup paperSize=\"9\" orientation=\"landscape\" fitToWidth=\"1\" fitToHeight=\"1\" useFirstPageNumber=\"0\" />"
+    },
+    {
+      "part": "xl/worksheets/sheet2.xml",
+      "links": 36,
+      "conditionalFormats": 2,
+      "pageSetup": null
+    },
+    {
+      "part": "xl/worksheets/sheet3.xml",
+      "links": 0,
+      "conditionalFormats": 10,
+      "pageSetup": null
+    },
+    {
+      "part": "xl/worksheets/sheet4.xml",
+      "links": 0,
+      "conditionalFormats": 1,
+      "pageSetup": null
+    },
+    {
+      "part": "xl/worksheets/sheet5.xml",
+      "links": 0,
+      "conditionalFormats": 3,
+      "pageSetup": null
+    },
+    {
+      "part": "xl/worksheets/sheet6.xml",
+      "links": 0,
+      "conditionalFormats": 0,
+      "pageSetup": null
+    }
+  ],
+  "limitations": [
+    "Stored values and formulas were inspected. No independent Excel recalculation was performed."
+  ]
+}

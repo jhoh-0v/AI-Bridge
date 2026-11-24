@@ -1,0 +1,42 @@
+✔ live feedback includes all prior turns, changed goals, RAG and actual file content (31.4581ms)
+✔ a one-character follow-up keeps the earlier context and streaming is not treated as a completed answer (2.5236ms)
+✔ file-only responses, multiple formats and late downloads belong to their originating turn (3.5639ms)
+✔ downloads from an open file viewer retain the observed result association without adopting unrelated files (1.7457ms)
+✔ file metadata is explicitly unread and invented quotations or one-sided error claims are rejected (27.7101ms)
+✔ consent and independent practice stop analysis at the data boundary, completion permits reflection (1.3694ms)
+✔ coordinator coalesces updates, discards stale feedback and never publishes during independent work (104.6616ms)
+✔ late coach results are hidden when independent practice starts; errors wait for an explicit retry (94.2607ms)
+✔ email: dialogue learning completes with text only and freezes evidence criteria (7.0584ms)
+✔ report: dialogue learning completes with text only and freezes evidence criteria (3.9617ms)
+✔ ppt: dialogue learning completes with text only and freezes evidence criteria (3.0175ms)
+✔ excel: dialogue learning completes with text only and freezes evidence criteria (3.8627ms)
+✔ minutes: dialogue learning completes with text only and freezes evidence criteria (4.1003ms)
+✔ plan: dialogue learning completes with text only and freezes evidence criteria (2.7239ms)
+✔ official: dialogue learning completes with text only and freezes evidence criteria (3.8637ms)
+✔ image: dialogue learning completes with text only and freezes evidence criteria (1.983ms)
+✔ original baseline and native upload proof survive follow-ups and validation (1.9059ms)
+✔ repeated requests are matched chronologically after reload and outside messages are not adopted (0.6068ms)
+✔ resume recovers missing earlier turns in the bound practice without replacing immutable evidence or duplicating turns (1.0823ms)
+✔ independent overlay hides even previously available feedback and fileless progress remains available (1.4498ms)
+✔ Codex receives only explicitly attached image copies with tools still disabled (0.2045ms)
+✔ old parser failures are retried once; current failures wait for retry and never ask for another download (0.691ms)
+✔ isolated preload exposes the result reading and retry commands while blocking arbitrary IPC (2.0579ms)
+✔ opening an Excel preview never turns a completed response into streaming again (0.6626ms)
+✔ result overlay points to a grounded sheet named in the action, never an invented worksheet (0.2406ms)
+✔ evidence and RAG enums constrain generation, quotes and addresses come from real cells (7.7853ms)
+✔ clicking send, clearing input, old messages and failed sends do not confirm a turn (1.2161ms)
+✔ scope isolates a practice conversation and never defaults to reading existing chats (3.4187ms)
+✔ flow advances only from confirmed messages and real submitted results; retry waits for a new turn (47.4715ms)
+✔ capture metadata survives restart, while old manual evidence is never relabeled automatic (11.1688ms)
+✔ a newly sent request can follow its observed file card without accepting arbitrary or old text (1.6172ms)
+✔ spreadsheet selection labels do not prevent confirmation of the exact newly sent request (0.6823ms)
+✔ history arriving before send confirmation settles only the matching new pending request (1.4423ms)
+✔ resuming settles observed requests without treating older, different, or out-of-phase turns as sent (0.5921ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 985.6371

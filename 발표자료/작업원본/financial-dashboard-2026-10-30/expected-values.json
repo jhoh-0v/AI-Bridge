@@ -1,0 +1,187 @@
+[
+  {
+    "year": 2021,
+    "metrics": {
+      "revenue": {
+        "value": 7486.696121177,
+        "source": "D19",
+        "prior": null,
+        "delta": null,
+        "percent": null
+      },
+      "operatingIncome": {
+        "value": 503.288807347,
+        "source": "D22",
+        "prior": null,
+        "delta": null,
+        "percent": null
+      },
+      "netIncome": {
+        "value": 351.071466376,
+        "source": "D24",
+        "prior": null,
+        "delta": null,
+        "percent": null
+      },
+      "cash": {
+        "value": 1138.310713309,
+        "source": "D37",
+        "prior": null,
+        "delta": null,
+        "percent": null
+      }
+    },
+    "netMarginCalculated": 4.689270950679473,
+    "incomeStatementMargin": 4.689270950679473,
+    "separateMargin": 4.689270950679473,
+    "balanceDifference": -2.2737367544323206e-13
+  },
+  {
+    "year": 2022,
+    "metrics": {
+      "revenue": {
+        "value": 10054.344625186,
+        "source": "E19",
+        "prior": 7486.696121177,
+        "delta": 2567.648504009,
+        "percent": 34.296149629288465
+      },
+      "operatingIncome": {
+        "value": 702.942994188,
+        "source": "E22",
+        "prior": 503.288807347,
+        "delta": 199.65418684099996,
+        "percent": 39.66990402457835
+      },
+      "netIncome": {
+        "value": 595.319035026,
+        "source": "E24",
+        "prior": 351.071466376,
+        "delta": 244.24756865000006,
+        "percent": 69.57203647772651
+      },
+      "cash": {
+        "value": 1412.070576945,
+        "source": "E37",
+        "prior": 1138.310713309,
+        "delta": 273.7598636360001,
+        "percent": 24.04966064495666
+      }
+    },
+    "netMarginCalculated": 5.9210128279742245,
+    "incomeStatementMargin": 5.9210128279742245,
+    "separateMargin": 5.9210128279742245,
+    "balanceDifference": 4.547473508864641e-13
+  },
+  {
+    "year": 2023,
+    "metrics": {
+      "revenue": {
+        "value": 10624.917993595,
+        "source": "F19",
+        "prior": 10054.344625186,
+        "delta": 570.5733684089992,
+        "percent": 5.674893687050675
+      },
+      "operatingIncome": {
+        "value": 993.128866188,
+        "source": "F22",
+        "prior": 702.942994188,
+        "delta": 290.185872,
+        "percent": 41.28156541843146
+      },
+      "netIncome": {
+        "value": 695.607943011,
+        "source": "F24",
+        "prior": 595.319035026,
+        "delta": 100.28890798499992,
+        "percent": 16.846245808454597
+      },
+      "cash": {
+        "value": 915.023632645,
+        "source": "F37",
+        "prior": 1412.070576945,
+        "delta": -497.04694430000006,
+        "percent": -35.19986553188835
+      }
+    },
+    "netMarginCalculated": 6.546948818149298,
+    "incomeStatementMargin": 6.546948818149298,
+    "separateMargin": 6.546948818149298,
+    "balanceDifference": 0
+  },
+  {
+    "year": 2024,
+    "metrics": {
+      "revenue": {
+        "value": 9966.551344477,
+        "source": "G19",
+        "prior": 10624.917993595,
+        "delta": -658.3666491179993,
+        "percent": -6.196439817369703
+      },
+      "operatingIncome": {
+        "value": 971.611686017,
+        "source": "G22",
+        "prior": 993.128866188,
+        "delta": -21.51718017099995,
+        "percent": -2.166605050318493
+      },
+      "netIncome": {
+        "value": 638.67245198,
+        "source": "G24",
+        "prior": 695.607943011,
+        "delta": -56.93549103099997,
+        "percent": -8.184997253560633
+      },
+      "cash": {
+        "value": 2595.674599832,
+        "source": "G37",
+        "prior": 915.023632645,
+        "delta": 1680.6509671869999,
+        "percent": 183.67295742174986
+      }
+    },
+    "netMarginCalculated": 6.408158949925268,
+    "incomeStatementMargin": 6.408158949925268,
+    "separateMargin": 6.41,
+    "balanceDifference": 0
+  },
+  {
+    "year": 2025,
+    "metrics": {
+      "revenue": {
+        "value": 9028.76908365,
+        "source": "H19",
+        "prior": 9966.551344477,
+        "delta": -937.7822608269998,
+        "percent": -9.409295436446785
+      },
+      "operatingIncome": {
+        "value": 792.078846892,
+        "source": "H22",
+        "prior": 971.611686017,
+        "delta": -179.532839125,
+        "percent": -18.477838596298934
+      },
+      "netIncome": {
+        "value": 648.307939623,
+        "source": "H24",
+        "prior": 638.67245198,
+        "delta": 9.635487643000033,
+        "percent": 1.508674378099184
+      },
+      "cash": {
+        "value": 861.796626374,
+        "source": "H37",
+        "prior": 2595.674599832,
+        "delta": -1733.8779734579998,
+        "percent": -66.79874178258791
+      }
+    },
+    "netMarginCalculated": 7.1804687174579165,
+    "incomeStatementMargin": 7.1804687174579165,
+    "separateMargin": 6.95,
+    "balanceDifference": -0.557572474999688
+  }
+]

@@ -1,0 +1,13 @@
+{"at":"2026-10-29T23:12:16.5164195Z","event":"recording-start-confirmed; preserved original before; continued phase 2"}
+{"at":"2026-10-29T23:12:38.3945704Z","event":"purpose-request-sent","prompt":"지금 자료는 숫자와 차트는 있는데, 재무 지식이 없는 팀장에게 3분 안에 설명하려니 무엇부터 보여줘야 할지 모르겠어. 같은 원본 재무제표를 사용해서, 연도를 바꾸며 핵심 변화가 바로 보이는 대시보드로 발전시키고 싶어. 먼저 내가 정해야 할 목적과 화면 구성, 확인 기준을 짧게 정리해줘. 아직 새 파일은 만들지 마."}
+{"at":"2026-10-29T23:19:37.8265785Z","event":"restart-demo-at-home-after-user-resume"}
+{"at":"2026-10-29T23:20:17.0256534Z","event":"original-prompt-visible"}
+{"at":"2026-10-29T23:20:37.8921041Z","event":"before-static-chart-visible"}
+{"at":"2026-10-29T23:21:15.5074593Z","event":"baseline-workbook-preview-fullscreen"}
+{"at":"2026-10-29T23:21:47.9215166Z","event":"dashboard-generation-request-sent"}
+{"at":"2026-10-29T23:23:19.5871255Z","event":"coach-verification-guidance-and-expanded-prompt"}
+{"at":"2026-10-29T23:41:00.8567783Z","event":"dashboard-files-generated"}
+{"at":"2026-10-29T23:42:38.3637424Z","event":"html-dashboard-2025-fullscreen"}
+{"at":"2026-10-29T23:43:13.5392892Z","event":"html-year-2023-verified","values":[10624.9,993.1,695.6,915.0],"percent":[5.7,41.3,16.8,-35.2]}
+{"at":"2026-10-29T23:43:43.7711169Z","event":"html-year-2021-verified","values":[7486.7,503.3,351.1,1138.3],"priorComparison":"비교 자료 없음"}
+{"at":"2026-10-29T23:48:36.5275358Z","event":"HTML dashboard 2025 explanation, source mismatch warnings and source-cell table visibly verified; app download fix follows"}

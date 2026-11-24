@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>삼성E&A | 2021–2025 연도 선택 재무 대시보드</title>
+<style>
+:root { --navy:#15283d;--ink:#20354b;--muted:#65788b;--teal:#11847f;--teal-soft:#e6f4f0;--blue:#516a9c;--blue-soft:#edf2f9;--coral:#b95750;--amber:#bd7d22;--amber-soft:#fff5e6;--line:#e3e9ed;--white:#fff;--bg:#f5f7f9; }
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;color:var(--ink);font-size:15px;line-height:1.55}button,a{font:inherit}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #23938f;outline-offset:3px}a{color:var(--teal)}.shell{max-width:1240px;margin:auto;padding:27px 22px 45px}.mast{background:var(--navy);color:#fff;border-radius:16px;padding:25px 31px 23px;display:flex;gap:20px;align-items:center;justify-content:space-between}.eyebrow{font-size:11px;font-weight:850;letter-spacing:.17em;color:#9fd4cd}.mast h1{font-size:clamp(21px,3vw,31px);letter-spacing:-.04em;margin:5px 0 5px;line-height:1.28}.mast p{margin:0;color:#c1d3e0;font-size:13px}.mast-tags{display:flex;gap:8px;flex-wrap:wrap;justify-content:end}.tag{font-size:12px;padding:7px 10px;border-radius:999px;background:#29445d;color:#e2f3f0;white-space:nowrap}.intro{display:flex;align-items:center;justify-content:space-between;gap:17px;margin:24px 0 17px;flex-wrap:wrap}.section-steps{font-size:11px;color:var(--muted);font-weight:750;letter-spacing:.13em}.intro h2{font-size:17px;letter-spacing:-.025em;margin:3px 0 0}.years{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.year-btn{background:white;color:var(--ink);border:1px solid #dce5e9;border-radius:11px;min-width:66px;min-height:44px;padding:8px 11px;font-weight:800;cursor:pointer;transition:background .12s,border-color .12s,color .12s}.year-btn:hover{border-color:var(--teal)}.year-btn.active{background:var(--teal);border-color:var(--teal);color:#fff;box-shadow:0 3px 0 #096764}.highlight{padding:19px 22px 19px 23px;border-left:6px solid var(--teal);background:#eaf4f1;border-radius:0 14px 14px 0;display:grid;grid-template-columns:105px 1fr;gap:15px;align-items:center}.highlight small{font-weight:800;color:var(--teal)}.highlight strong{font-size:clamp(16px,2.15vw,21px);letter-spacing:-.02em;line-height:1.5}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:17px}.metric{border-radius:14px;background:#fff;border:1px solid var(--line);padding:16px 17px 15px;min-width:0}.metric .label{color:var(--muted);font-size:13px;font-weight:800}.value-line{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;margin:10px 0 5px}.value{font-size:clamp(23px,2.7vw,35px);line-height:1.18;letter-spacing:-.045em;color:var(--navy);font-variant-numeric:tabular-nums;font-weight:850;white-space:nowrap}.unit{font-size:11px;color:var(--muted);font-weight:750}.delta{border-top:1px solid #ecf0f3;margin-top:11px;padding-top:10px;font-size:12px;font-weight:760;color:var(--muted);min-height:29px}.delta.positive{color:var(--teal)}.delta.negative{color:var(--coral)}.section-head{margin:32px 0 13px;display:flex;align-items:baseline;gap:12px;justify-content:space-between}.section-head h2{font-size:19px;letter-spacing:-.025em;margin:0}.section-head p{color:var(--muted);font-size:12px;margin:0}.viz-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,0.9fr);gap:14px}.panel{border-radius:16px;background:#fff;border:1px solid var(--line);padding:19px 20px 13px;min-width:0}.panel h3{font-size:16px;line-height:1.38;letter-spacing:-.025em;margin:0}.panel .detail{color:var(--muted);font-size:12px;margin:4px 0 12px}.svg{display:block;width:100%;height:auto;overflow:visible}.svg text{font-family:inherit}.chart-key{display:flex;gap:17px;flex-wrap:wrap;color:var(--muted);font-size:12px;align-items:center;margin:3px 0 1px}.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}.dot.selected{background:var(--teal)}.dot.other{background:#d5e0e7}.dot.operating{background:var(--teal)}.dot.net{background:var(--blue)}.year-target{cursor:pointer}.year-target:focus-visible{outline:none;filter:drop-shadow(0 0 3px #39a8a1)}.full-plot{margin-top:14px}.explainer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.explain-card{min-width:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 19px 20px}.explain-card b{display:block;font-size:14px;color:var(--teal);margin:0 0 10px}.explain-card p{margin:0;color:#324459;line-height:1.72;font-size:14px}.warning-block{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.alert{border-radius:14px;padding:16px 18px;border:1px solid #ead3a9;background:var(--amber-soft);min-width:0}.alert.ok{border-color:#bcded3;background:#eff8f5}.alert h3{margin:0 0 8px;font-size:15px;color:#86551a}.alert.ok h3{color:var(--teal)}.alert p{margin:0 0 8px;font-size:13px;line-height:1.65}.alert p:last-child{margin-bottom:0}.alert .digits{font-weight:850;font-variant-numeric:tabular-nums}.reference{font-size:12px;color:var(--muted)}.always{background:#eff3f6;border:1px solid #e0e8ee;border-radius:11px;padding:12px 16px;color:#4d6477;font-size:12px;margin:13px 0 0}.foot-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 15px;margin-top:17px}.source-link{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--navy);color:#fff;text-decoration:none;padding:9px 13px;border-radius:9px;font-size:13px;font-weight:750;min-height:43px}.source-link:hover{background:#2c4965}.light-note{color:var(--muted);font-size:12px}.questions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.q-card{padding:14px 17px;border:1px solid #d9e5e5;border-radius:12px;background:#f0f7f6;font-size:13px;line-height:1.6}.q-card span{font-weight:850;color:var(--teal);margin-right:6px}.detail-source{border:1px solid var(--line);border-radius:14px;background:white;overflow:hidden;margin-top:22px}.detail-source summary{cursor:pointer;padding:14px 17px;font-weight:800;color:var(--navy);background:#e9eff4;min-height:48px}.detail-body{padding:17px}.detail-body p{font-size:13px;color:var(--muted);margin:0 0 10px}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:580px;font-size:13px}th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px}td{padding:8px 12px;border-bottom:1px solid #e8edf1}td.num{font-variant-numeric:tabular-nums;text-align:right}td.linkcode{font-weight:750;color:var(--teal)}tbody tr:nth-child(even){background:#f8fafb}.calc-foot{font-size:12px;color:var(--muted);margin-top:10px}.footer{font-size:12px;color:var(--muted);padding:20px 2px 0;margin:0}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(max-width:900px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.viz-grid{grid-template-columns:1fr}.panel{padding:17px}.value{font-size:30px}.explainer{grid-template-columns:1fr}.warning-block{grid-template-columns:1fr}.questions{grid-template-columns:1fr}}
+@media(max-width:520px){.shell{padding:12px 12px 25px}.mast{flex-direction:column;align-items:start;padding:20px 18px;gap:11px}.mast-tags{justify-content:start}.intro{margin:20px 0 12px}.years{width:100%}.year-btn{flex:1;min-width:52px;padding:9px 5px}.highlight{grid-template-columns:1fr;gap:5px;padding:16px}.metrics{gap:8px}.metric{padding:14px 11px}.value{font-size:clamp(20px,6vw,29px)}.unit{font-size:10px}.delta{font-size:11px}.section-head{display:block;margin:26px 0 10px}.section-head p{margin-top:4px}.panel{padding:13px 11px}.svg{min-height:165px}.chart-key{font-size:11px}.explain-card{padding:15px}}
+@media print{body{background:white}.shell{padding:0;max-width:none}.year-btn{display:none}.year-btn.active{display:block;box-shadow:none}.panel,.metric,.alert{break-inside:avoid}.detail-source{display:none}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <header class="mast">
+    <div><div class="eyebrow">FINANCIAL BRIEF · 3 MIN READ</div><h1>삼성E&amp;A 실적 변화 대시보드</h1><p>2021–2025 · 첨부 원본 재무제표의 표기 회사명 기준</p></div>
+    <div class="mast-tags"><span class="tag">금액 · 십억원</span><span class="tag">증감률 · %</span><span class="tag">비율 간 차이 · %p</span></div>
+  </header>
+  <section class="intro" aria-label="연도 선택"><div><div class="section-steps">01 / CHOOSE A YEAR</div><h2>먼저 보고할 연도를 선택하세요</h2></div>
+    <div class="years" role="group" aria-label="2021년부터 2025년 중 선택">
+    <button class="year-btn" type="button" data-select-year="2021" aria-pressed="false">2021</button>
+    <button class="year-btn" type="button" data-select-year="2022" aria-pressed="false">2022</button>
+    <button class="year-btn" type="button" data-select-year="2023" aria-pressed="false">2023</button>
+    <button class="year-btn" type="button" data-select-year="2024" aria-pressed="false">2024</button>
+    <button class="year-btn active" type="button" data-select-year="2025" aria-pressed="true">2025</button>
+    </div>
+  </section>
+  <div class="highlight" aria-live="polite"><small>한 줄 결론</small><strong id="conclusion">2025년 매출·영업이익은 감소했고 당기순이익은 증가했습니다.</strong></div>
+  <section class="metrics" aria-label="선택 연도의 핵심 지표">
+    <article class="metric"><div class="label">매출액</div><div class="value-line"><span class="value" id="v-revenue">9,028.8</span><span class="unit">십억원</span></div><div class="delta" id="d-revenue">전년 대비 −937.8십억원 (−9.4%)</div></article>
+    <article class="metric"><div class="label">영업이익</div><div class="value-line"><span class="value" id="v-operating">792.1</span><span class="unit">십억원</span></div><div class="delta" id="d-operating">전년 대비 −179.5십억원 (−18.5%)</div></article>
+    <article class="metric"><div class="label">당기순이익</div><div class="value-line"><span class="value" id="v-net">648.3</span><span class="unit">십억원</span></div><div class="delta" id="d-net">전년 대비 +9.6십억원 (+1.5%)</div></article>
+    <article class="metric"><div class="label">기말현금</div><div class="value-line"><span class="value" id="v-cash">861.8</span><span class="unit">십억원</span></div><div class="delta" id="d-cash">전년 대비 −1,733.9십억원 (−66.8%)</div></article>
+  </section>
+  <section aria-label="차트">
+    <div class="section-head"><h2>02 / 전년 비교와 5개년 흐름</h2><p>같은 축에는 같은 단위만 사용 · 선택 연도는 색으로 강조</p></div>
+    <div class="viz-grid">
+      <article class="panel"><h3 id="rev-title">2025년 선택 · 5개년 매출액</h3><p class="detail">금액 기준 · 십억원 · 막대나 연도를 클릭해 연도 변경</p><svg class="svg" id="revenue-chart" viewBox="0 0 700 290" role="img" aria-label="연도별 매출액 추이"></svg><div class="chart-key"><span><i class="dot other"></i>다른 연도</span><span><i class="dot selected"></i>선택 연도</span></div></article>
+      <article class="panel"><h3 id="yoy-title">2024 → 2025년 전년 대비</h3><p class="detail">증감률 기준 · % · 금액 차이는 위 핵심 숫자에 표시</p><svg class="svg" id="yoy-chart" viewBox="0 0 600 290" role="img" aria-label="전년 대비 증감률"></svg><div class="chart-key"><span style="color:var(--coral)">● 감소</span><span style="color:var(--teal)">● 증가</span></div></article>
+    </div>
+    <article class="panel full-plot"><h3 id="profit-title">2025년 강조 · 5개년 영업이익·순이익</h3><p class="detail">금액 기준 · 십억원 · 선택 연도 위치 및 점을 강조</p><svg class="svg" id="profit-chart" viewBox="0 0 1110 275" role="img" aria-label="영업이익과 당기순이익의 연도별 추이"></svg><div class="chart-key"><span><i class="dot operating"></i>영업이익</span><span><i class="dot net"></i>당기순이익</span><span style="color:var(--amber)">● 선택 연도</span></div></article>
+  </section>
+  <section aria-label="쉬운 설명">
+    <div class="section-head"><h2>03 / 회의에서 설명할 변화 3가지</h2><p>무엇이 변했는지만 말합니다. 원인은 추가 자료로 확인하세요.</p></div>
+    <div class="explainer">
+      <article class="explain-card"><b>01 · 매출 규모</b><p id="n-revenue">2025년 매출은 전년보다 줄었습니다.</p></article>
+      <article class="explain-card"><b>02 · 이익과 수익성</b><p id="n-profit">영업이익과 순이익의 변화가 달랐습니다.</p></article>
+      <article class="explain-card"><b>03 · 기말현금</b><p id="n-cash">기말현금은 전년보다 줄었습니다.</p></article>
+    </div>
+  </section>
+  <section aria-label="주의사항">
+    <div class="section-head"><h2>04 / 숫자 확인이 필요한 곳</h2><p>원본을 수정하거나 이유를 추정하지 않았습니다.</p></div>
+    <div class="warning-block">
+      <article id="margin-alert" class="alert"><h3 id="margin-heading">순이익률 출처 차이</h3><p id="margin-body">2025년 손익계산서와 별도 주요지표의 값이 다릅니다.</p><p class="reference" id="margin-ref">출처: 데이타!H30 · H47</p></article>
+      <article id="bs-alert" class="alert"><h3 id="bs-heading">재무상태표 합계 차이</h3><p id="bs-body">2025년 자산총계와 부채·자본 합계가 다릅니다.</p><p class="reference" id="bs-ref">출처: 데이타!H8 · H12 · H16</p></article>
+    </div>
+    <p class="always"><strong>회사명 확인:</strong> 첨부 파일명은 ‘삼성전자 재무제표’이지만, 원본 <strong>데이타!B2</strong>의 회사명은 ‘삼성E&amp;A’입니다. 본 자료는 원본 기재 회사명을 기준으로 분석했습니다.</p>
+    <div class="foot-row"><a class="source-link" href="./삼성EA_연도선택_대시보드.xlsx">같은 폴더의 엑셀에서 원본 보기 ↗</a><span class="light-note">엑셀의 [연도선택 데이터]와 [원본 대조] 시트에서 수식·셀을 대조할 수 있습니다.</span></div>
+  </section>
+  <section aria-label="다음 질문">
+    <div class="section-head"><h2>05 / 팀장과 다음에 확인할 질문</h2><p>원인을 단정하지 않고 후속 확인 항목으로 연결합니다.</p></div>
+    <div class="questions"><div class="q-card"><span>Q1</span><span id="q-1">매출 변화는 어떤 사업별 실적에서 나타났나?</span></div><div class="q-card"><span>Q2</span><span id="q-2">영업이익과 순이익 차이는 어떤 항목에서 발생했나?</span></div><div class="q-card"><span>Q3</span><span id="q-3">현금 변화가 어느 활동에서 나타났나?</span></div></div>
+  </section>
+  <details class="detail-source"><summary>선택 연도의 원본 숫자·셀 주소 전체 보기</summary><div class="detail-body"><p>단위가 <b>십억원</b>인 금액과 <b>%</b>인 순이익률을 분리했습니다. 셀 주소는 함께 제공된 엑셀 파일 <b>데이타</b> 시트 기준입니다.</p><div class="table-scroll"><table><thead><tr><th>지표</th><th>원본 셀</th><th>원본 또는 계산값</th><th>단위</th></tr></thead><tbody id="source-body"></tbody></table></div><div class="calc-foot">순이익률(대시보드) = 당기순이익 ÷ 매출액 × 100. 재무상태표 차이 = 자산총계 − 부채총계 − 자본총계. 원본 표기값을 별도로 유지했습니다.</div></div></details>
+  <p class="footer">출처: 첨부된 삼성E&amp;A 재무제표 [데이타] · 2021–2025 원본 수치. 전년 비교는 두 해 모두 자료가 있는 경우만 계산합니다. 수치 자체는 변동 원인, 위험도 또는 투자 판단을 확정하지 않습니다. 이 HTML은 네트워크나 별도 서버 없이 실행됩니다.</p>
+</main>
+<script>
+'use strict';
+// Precisely the same original '데이타' values as the spreadsheet's linked source cells.
+const original = [{"year":2021,"sourceColumn":"D","revenue":7486.696121177,"operating":503.288807347,"net":351.071466376,"cash":1138.310713309,"incomeMargin":4.689270950679473,"separateMargin":4.689270950679473,"assets":6058.722396874,"liabilities":4098.204678539,"equity":1960.517718335,"operatingCashflow":739.825439031,"investingCashflow":-201.253407255,"financingCashflow":-208.204188912},{"year":2022,"sourceColumn":"E","revenue":10054.344625186,"operating":702.942994188,"net":595.319035026,"cash":1412.070576945,"incomeMargin":5.9210128279742245,"separateMargin":5.9210128279742245,"assets":7848.723222714,"liabilities":5271.682815759,"equity":2577.040406955,"operatingCashflow":576.706460947,"investingCashflow":-528.7545322,"financingCashflow":174.668880073},{"year":2023,"sourceColumn":"F","revenue":10624.917993595,"operating":993.128866188,"net":695.607943011,"cash":915.023632645,"incomeMargin":6.546948818149298,"separateMargin":6.546948818149298,"assets":7801.398613122,"liabilities":4503.060317148,"equity":3298.338295974,"operatingCashflow":-459.792198902,"investingCashflow":16.438514312,"financingCashflow":-123.480009972},{"year":2024,"sourceColumn":"G","revenue":9966.551344477,"operating":971.611686017,"net":638.67245198,"cash":2595.674599832,"incomeMargin":6.408158949925268,"separateMargin":6.41,"assets":10013.337796132,"liabilities":6117.596009939,"equity":3895.741786193,"operatingCashflow":1635.836692152,"investingCashflow":-49.656151552,"financingCashflow":-29.639226302},{"year":2025,"sourceColumn":"H","revenue":9028.76908365,"operating":792.078846892,"net":648.307939623,"cash":861.796626374,"incomeMargin":7.1804687174579165,"separateMargin":6.95,"assets":10039.0,"liabilities":5593.370097294,"equity":4446.187475181,"operatingCashflow":254.433358974,"investingCashflow":-1709.116071579,"financingCashflow":-263.868168206}];
+const byYear = new Map(original.map(x => [x.year,x]));
+const years = original.map(x => x.year);
+const currency = new Intl.NumberFormat('ko-KR',{minimumFractionDigits:1,maximumFractionDigits:1});
+const compact = new Intl.NumberFormat('ko-KR',{maximumFractionDigits:0});
+const small = new Intl.NumberFormat('ko-KR',{minimumFractionDigits:4,maximumFractionDigits:4});
+const $ = id => document.getElementById(id);
+const formatMoney = v => currency.format(v);
+const signed = (v,digits=1) => `${v>0?'+':''}${Number(v).toLocaleString('ko-KR',{minimumFractionDigits:digits,maximumFractionDigits:digits})}`;
+const diff = (curr,prev) => prev === null ? null : ({amount:curr-prev,rate:prev === 0 ? null : (curr/prev-1)*100});
+const strip = str => String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+let current=2025;
+function fmtAxis(v) { return compact.format(v); }
+function niceMax(v,n=4){ const rough=Math.max(1,v/n);const scale=Math.pow(10,Math.floor(Math.log10(rough)));const steps=[1,1.5,2,2.5,3,4,5,6,8,10];const step=steps.find(x=>x*scale>=rough) ?? 10*scale;return step*scale*n; }
+function gridMarks(max,y0,plotH,left,right,ticks=4,percent=false){
+ let html='';for(let i=0;i<=ticks;i++){const v=max*i/ticks,y=y0+plotH-(i/ticks)*plotH;html+=`<line x1="${left}" x2="${right}" y1="${y}" y2="${y}" stroke="#e4ebed" stroke-dasharray="4 4"/><text x="${left-12}" y="${y+4}" font-size="12" fill="#748797" text-anchor="end">${percent?v.toFixed(0)+'%':fmtAxis(v)}</text>`;}return html;
+}
+function renderRevenue(){
+ const svg=$('revenue-chart');const w=700,left=66,right=679,top=22,bottom=253,plotH=bottom-top,step=(right-left)/5;
+ const max=niceMax(Math.max(...original.map(x=>x.revenue))*1.07,4);let html=gridMarks(max,top,plotH,left,right);
+ original.forEach((r,i)=>{const cx=left+step*(i+.5),width=64;const y=bottom-(r.revenue/max)*plotH;const chosen=r.year===current;
+ html+=`<g data-year="${r.year}" class="year-target" tabindex="0" role="button" aria-label="${r.year}년 매출액 ${formatMoney(r.revenue)}십억원 선택"><rect x="${cx-width/2}" y="${y}" width="${width}" height="${bottom-y}" rx="5" fill="${chosen?'#11847f':'#d5e0e7'}"/><text x="${cx}" y="${Math.max(15,y-8)}" text-anchor="middle" font-size="12.5" fill="${chosen?'#0c716c':'#5a7183'}" font-weight="${chosen?800:500}">${fmtAxis(r.revenue)}</text>${chosen?`<rect x="${cx-31}" y="${bottom+10}" width="62" height="25" rx="12" fill="#e2f3ee"/>`:''}<text x="${cx}" y="${bottom+28}" text-anchor="middle" font-size="14" font-weight="${chosen?800:600}" fill="${chosen?'#0c716c':'#698092'}">${r.year}</text></g>`;
+ }); svg.innerHTML=html;
+ svg.setAttribute('aria-label',`2021년부터 2025년까지 매출액 십억원, ${current}년 막대 강조`);
+}
+function renderGrowth(){
+ const svg=$('yoy-chart'); const d=byYear.get(current);const p=byYear.get(current-1);
+ if(!p){svg.innerHTML='<rect x="20" y="40" width="560" height="205" rx="12" fill="#f1f5f7"/><text x="300" y="121" font-size="23" fill="#314962" font-weight="800" text-anchor="middle">비교 자료 없음</text><text x="300" y="155" font-size="14" fill="#73869a" text-anchor="middle">2020년 값이 제공되지 않아 증감률을 계산하지 않습니다.</text>';
+ svg.setAttribute('aria-label','2021년은 전년 비교 자료 없음');return;}
+ const items=[['매출액',diff(d.revenue,p.revenue).rate],['영업이익',diff(d.operating,p.operating).rate],['당기순이익',diff(d.net,p.net).rate],['기말현금',diff(d.cash,p.cash).rate]];
+ const mm=Math.max(8,...items.map(x=>Math.abs(x[1])))*1.16;const min=-mm,max=mm,left=104,right=579,width=right-left,zero=left+(0-min)/(max-min)*width;
+ let html=`<line x1="${zero}" x2="${zero}" y1="25" y2="253" stroke="#78909d" stroke-width="2"/>`;
+ for(let i=0;i<5;i++){const tick=min+i*(max-min)/4,x=left+(tick-min)/(max-min)*width;
+ html+=`<line x1="${x}" x2="${x}" y1="22" y2="252" stroke="#e5ebef" stroke-dasharray="3 5"/><text x="${x}" y="276" font-size="11" fill="#708395" text-anchor="middle">${tick.toFixed(0)}%</text>`;}
+ items.forEach(([name,rate],i)=>{const y=36+i*54,x=left+(rate-min)/(max-min)*width,x0=Math.min(x,zero); const bw=Math.max(1,Math.abs(x-zero));
+ const tight=rate<0&&x<left+95;const labelX=tight?x+8:(rate<0?x-7:x+7);const labelAnchor=tight?'start':(rate<0?'end':'start');const labelColor=tight?'#ffffff':(rate>=0?'#0d746d':'#a84a44');
+ html+=`<text x="95" y="${y+19}" fill="#425a6e" font-weight="650" text-anchor="end" font-size="13">${name}</text><rect x="${x0}" y="${y}" width="${bw}" height="28" rx="4" fill="${rate>=0?'#11847f':'#b95750'}"/><text x="${labelX}" y="${y+19}" font-weight="800" font-size="13" text-anchor="${labelAnchor}" fill="${labelColor}">${signed(rate)}%</text>`;
+ });svg.innerHTML=html;
+ svg.setAttribute('aria-label',`${current-1}년 대비 ${current}년의 매출액·영업이익·당기순이익·기말현금 증감률 %`);
+}
+function renderProfit(){
+ const svg=$('profit-chart');const left=70,right=1080,top=25,bottom=229,plotH=bottom-top,step=(right-left)/4;
+ const max=niceMax(Math.max(...original.map(x=>x.operating))*1.05,4),maxY=v=>bottom-v/max*plotH;
+ let html=gridMarks(max,top,plotH,left,right);const selectedIndex=years.indexOf(current);const selectedX=left+selectedIndex*step;
+ html+=`<rect x="${selectedX-46}" y="${top}" width="92" height="${plotH}" fill="#dff1ed" opacity=".68" rx="11"/><text x="${selectedX}" y="${top+15}" text-anchor="middle" font-size="12" font-weight="800" fill="#08736e">${current} 선택</text>`;
+ for(const [field,color] of [['operating','#11847f'],['net','#516a9c']]){
+   const points=original.map((r,i)=>({x:left+i*step,y:maxY(r[field]),year:r.year,v:r[field]}));
+   html+=`<path d="${points.map((p,i)=>(i?'L':'M')+p.x.toFixed(1)+' '+p.y.toFixed(1)).join(' ')}" fill="none" stroke="${color}" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>`;
+   points.forEach(p=>{const chosen=p.year===current;html+=`<g data-year="${p.year}" class="year-target" tabindex="0" role="button" aria-label="${p.year}년 ${field==='operating'?'영업이익':'당기순이익'} ${formatMoney(p.v)}십억원 선택"><circle cx="${p.x}" cy="${p.y}" r="${chosen?8:5}" fill="${color}" stroke="${chosen?'#ffb359':'#fff'}" stroke-width="${chosen?4:1.5}"/></g>`;});
+ }
+ years.forEach((year,i)=>{const x=left+i*step;html+=`<text data-year="${year}" x="${x}" y="259" text-anchor="middle" font-size="14" fill="${year===current?'#08736e':'#687d91'}" font-weight="${year===current?800:500}" class="year-target" role="button" tabindex="0" aria-label="${year}년 선택">${year}</text>`;});
+ svg.innerHTML=html;
+ svg.setAttribute('aria-label',`5개년 영업이익과 당기순이익 십억원, ${current}년 강조`);
+}
+function toggleAlert(element,title,body,ref,warning,heading,content,reference){
+ $(element).classList.toggle('ok',!warning);$(title).textContent=heading;$(body).textContent=content;$(ref).textContent=reference;
+}
+function tableRow(label,addr,value,unit){return `<tr><td>${strip(label)}</td><td class="linkcode">${strip(addr)}</td><td class="num">${strip(value)}</td><td>${strip(unit)}</td></tr>`;}
+function renderSources(r){
+ const c=r.sourceColumn;
+ const items=[['매출액',`${c}19`,formatMoney(r.revenue),'십억원'],['영업이익',`${c}22`,formatMoney(r.operating),'십억원'],['당기순이익',`${c}24`,formatMoney(r.net),'십억원'],['기말현금',`${c}37`,formatMoney(r.cash),'십억원'],['순이익률 · 손익계산서',`${c}30`,small.format(r.incomeMargin),'%'],['순이익률 · 별도 주요지표',`${c}47`,small.format(r.separateMargin),'%'],['순이익률 · 대시보드 계산',`${c}24 ÷ ${c}19 × 100`,small.format(r.net/r.revenue*100),'%'],['자산총계',`${c}8`,formatMoney(r.assets),'십억원'],['부채총계',`${c}12`,formatMoney(r.liabilities),'십억원'],['자본총계',`${c}16`,formatMoney(r.equity),'십억원']];
+ $('source-body').innerHTML=items.map(it=>tableRow(...it)).join('');
+}
+function render(year){
+ if(!byYear.has(year))return;current=year;
+ const now=byYear.get(year),prev=byYear.get(year-1)||null;
+ document.querySelectorAll('[data-select-year]').forEach(btn=>{const sel=Number(btn.dataset.selectYear)===current;btn.classList.toggle('active',sel);btn.setAttribute('aria-pressed',String(sel));});
+ const metrics=[['revenue','매출',now.revenue,prev?.revenue],['operating','영업이익',now.operating,prev?.operating],['net','당기순이익',now.net,prev?.net],['cash','기말현금',now.cash,prev?.cash]];
+ metrics.forEach(([key,label,value,prior])=>{const d=diff(value,prior===undefined?null:prior);$('v-'+key).textContent=formatMoney(value);const node=$('d-'+key);node.classList.remove('positive','negative');
+ if(!d||d.rate===null){node.textContent='전년 비교 자료 없음';return;}node.textContent=`전년 대비 ${signed(d.amount)} 십억원 (${signed(d.rate)}%)`;node.classList.add(d.amount>=0?'positive':'negative');});
+ if(!prev) $('conclusion').textContent='2021년은 전년 비교 자료가 없어 증감 판단을 보류합니다. 아래 5개년 흐름을 확인하세요.';
+ else $('conclusion').textContent=`${year}년 매출 ${now.revenue>=prev.revenue?'증가':'감소'}, 영업이익 ${now.operating>=prev.operating?'증가':'감소'}, 당기순이익 ${now.net>=prev.net?'증가':'감소'} · 원인은 별도 확인이 필요합니다.`;
+ $('rev-title').textContent=`${year}년 강조 · 5개년 매출액 (십억원)`;
+ $('yoy-title').textContent=prev?`${year-1} → ${year}년 전년 대비 변화 (%)`:`${year}년 · 전년 비교 자료 없음`;
+ $('profit-title').textContent=`${year}년 강조 · 5개년 영업이익·당기순이익 (십억원)`;
+ if(!prev){
+  $('n-revenue').textContent=`매출은 ${formatMoney(now.revenue)}십억원입니다. 2020년 자료가 없어 전년과 비교하지 않습니다.`;
+  $('n-profit').textContent=`영업이익 ${formatMoney(now.operating)}십억원, 당기순이익 ${formatMoney(now.net)}십억원입니다. 순이익률 ${small.format(now.net/now.revenue*100)}%는 순이익÷매출액 기준입니다.`;
+  $('n-cash').textContent=`기말현금은 ${formatMoney(now.cash)}십억원입니다. 전년 자료가 없어 증감은 알 수 없습니다.`;
+ } else {
+  const a=diff(now.revenue,prev.revenue),o=diff(now.operating,prev.operating),n=diff(now.net,prev.net),c=diff(now.cash,prev.cash);
+  $('n-revenue').textContent=`${year}년 매출은 전년보다 ${formatMoney(Math.abs(a.amount))}십억원 ${a.amount>=0?'늘었습니다':'줄었습니다'} (${signed(a.rate)}%). 어떤 사업에서 변했는지는 이 숫자만으로 알 수 없습니다.`;
+  $('n-profit').textContent=`영업이익 ${signed(o.rate)}%, 당기순이익 ${signed(n.rate)}% 변화했습니다. 순이익률은 ${small.format(now.net/now.revenue*100)}%(순이익÷매출액)이며 변화 원인은 추가 확인이 필요합니다.`;
+  $('n-cash').textContent=`기말현금은 전년 대비 ${formatMoney(Math.abs(c.amount))}십억원 ${c.amount>=0?'늘었습니다':'줄었습니다'} (${signed(c.rate)}%). 현금 증감만으로 자금 사정의 원인을 단정하지 않습니다.`;
+ }
+ const m=now.incomeMargin-now.separateMargin,b=now.assets-now.liabilities-now.equity,c=now.sourceColumn;
+ const issueM=Math.abs(m)>1e-9,issueB=Math.abs(b)>1e-9;
+ toggleAlert('margin-alert','margin-heading','margin-body','margin-ref',issueM,
+   issueM?'확인 필요 · 순이익률 원본 표기 차이':'확인 · 순이익률 출처 표기 일치',
+   issueM?`손익계산서 ${small.format(now.incomeMargin)}%와 별도 주요지표 ${small.format(now.separateMargin)}%가 ${small.format(Math.abs(m))}%p 다릅니다. 대시보드는 당기순이익÷매출액 계산값 ${small.format(now.net/now.revenue*100)}%를 사용합니다. 차이 원인은 미확인입니다.`:
+          `손익계산서와 별도 주요지표 모두 ${small.format(now.incomeMargin)}%로 일치합니다. 대시보드는 당기순이익÷매출액 계산값 ${small.format(now.net/now.revenue*100)}%를 사용합니다.`,
+   `데이타!${c}30 (손익계산서) · 데이타!${c}47 (별도 주요지표) · 데이타!${c}24 ÷ ${c}19 (계산)`);
+ toggleAlert('bs-alert','bs-heading','bs-body','bs-ref',issueB,
+   issueB?'확인 필요 · 재무상태표 합계 차이':'확인 · 재무상태표 합계 일치',
+   issueB?`자산총계 − (부채총계 + 자본총계) = ${signed(b,4)}십억원입니다. 원자료의 숫자를 그대로 표시하며 차이의 원인을 단정하지 않습니다.`:
+          `자산총계와 부채총계·자본총계의 합계가 제공 수치상 일치합니다.`,
+   `데이타!${c}8 (자산) · 데이타!${c}12 (부채) · 데이타!${c}16 (자본)`);
+ $('q-1').textContent=prev?`매출이 전년보다 ${now.revenue>=prev.revenue?'늘었는데':'줄었는데'}, 어느 사업·부문에서 변화가 나타났나요?`:'2021년 실적을 평가할 추가 과거 자료가 있나요?';
+ $('q-2').textContent=prev?'영업이익과 순이익 증감 차이는 어떤 비용·비영업 항목에서 나타났나요?':'영업이익과 당기순이익 사이에는 어떤 항목이 있나요?';
+ $('q-3').textContent=prev?'기말현금 변동은 영업·투자·재무활동의 어느 항목과 연관되나요?':'기말현금 구성 및 현금흐름표는 어떻게 연결되나요?';
+ renderRevenue();renderGrowth();renderProfit();renderSources(now);
+ document.title=`${year}년 · 삼성E&A 연도 선택 재무 대시보드`;
+}
+document.querySelectorAll('[data-select-year]').forEach(btn=>btn.addEventListener('click',()=>render(Number(btn.dataset.selectYear))));
+for(const id of ['revenue-chart','profit-chart']){
+ $(id).addEventListener('click',e=>{const t=e.target.closest('[data-year]');if(t)render(Number(t.dataset.year));});
+ $(id).addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){const t=e.target.closest('[data-year]');if(t){e.preventDefault();render(Number(t.dataset.year));}}});
+}
+render(2025);
+</script>
+</body>
+</html>

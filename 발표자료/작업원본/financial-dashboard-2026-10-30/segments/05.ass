@@ -1,0 +1,11 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1200
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Malgun Gothic,30,&H00F2F8F4,&H00FFFFFF,&H000B1D18,&H000B1D18,0,0,0,0,100,100,0,0,1,0,0,2,55,55,12,1
+Style: Title,Malgun Gothic,56,&H00F2F8F4,&H00FFFFFF,&H000B1D18,&H000B1D18,-1,0,0,0,100,100,0,0,1,0,0,5,100,100,50,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,1:00:00.00,Title,,0,0,0,,코칭을 바탕으로 구체화한 요청\N팀장에게 3분 설명 · 연도별 핵심 변화\N숫자·차트·설명 연동 · 원본과 출처 확인

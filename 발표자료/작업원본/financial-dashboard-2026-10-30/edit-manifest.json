@@ -1,0 +1,30 @@
+{
+  "sources": {
+    "main": "C:/Users/ojh34/Videos/화면 녹화/화면 녹화 중 2026-10-30 085042.mp4",
+    "coaching": "C:/Users/ojh34/Videos/화면 녹화/화면 녹화 중 2026-10-30 081650.mp4"
+  },
+  "clips": [
+    {"duration":4,"caption":"AI Bridge\\N같은 재무제표, 달라진 요청과 결과"},
+    {"source":"main","start":68,"end":74,"caption":"BEFORE  |  실제 첫 요청: ‘재무제표를 활용한 시각화 자료’"},
+    {"source":"main","start":127,"end":136,"caption":"BEFORE  |  기존 결과는 유지 · 2025년 핵심 수치와 고정된 차트"},
+    {"source":"coaching","start":221,"end":241,"speed":10,"caption":"요청 발전  |  ‘팀장에게 3분 안에 설명하고 싶어’ · 입력·전송 10배속"},
+    {"source":"coaching","start":250,"end":262,"caption":"실제 AI Bridge 코칭  |  목적 → 화면 순서 → 연도 선택 → 확인 기준"},
+    {"duration":6,"caption":"코칭을 바탕으로 구체화한 요청\\N팀장에게 3분 설명 · 연도별 핵심 변화\\N숫자·차트·설명 연동 · 원본과 출처 확인"},
+    {"source":"main","start":147,"end":157,"speed":10,"caption":"실제 ChatGPT에 개선 요청 전송 · 10배속"},
+    {"source":"main","start":247,"end":260,"caption":"발전한 프롬프트  |  대상·목적·화면 구성·연도 선택 동작을 구체적으로 요청"},
+    {"source":"main","start":303,"end":313,"speed":2,"caption":"검증 조건 추가  |  2021년 비교 자료 없음 · 단위 구분 · 원본 차이 보존"},
+    {"source":"main","start":1220,"end":1260,"speed":10,"caption":"ChatGPT에서 새 결과 생성 · 10배속 / 긴 대기 구간 삭제"},
+    {"source":"main","start":1270,"end":1275,"caption":"같은 대화에서 실제 XLSX·HTML 결과 생성 · AI Bridge가 결과 파일 인식"},
+    {"source":"main","start":1351,"end":1383,"speed":10,"caption":"생성된 HTML 대시보드 열기 · 10배속"},
+    {"source":"main","start":1404,"end":1412,"caption":"AFTER  |  연도 선택 + 결론 한 줄 + 핵심 숫자 4개 + 비교 차트"},
+    {"source":"main","start":1425,"end":1439,"caption":"2023년 선택  |  숫자·증감률·결론·차트 강조가 함께 변경"},
+    {"source":"main","start":1455,"end":1467,"caption":"2021년 선택  |  전년 자료가 없으면 0% 대신 ‘비교 자료 없음’"},
+    {"source":"main","start":1506,"end":1585,"speed":10,"caption":"2022 → 2024 → 2025년 전환 확인 · 10배속"},
+    {"source":"main","start":1590,"end":1596,"caption":"선택한 연도의 위치를 강조하며 5개년 흐름 비교"},
+    {"source":"main","start":1717,"end":1727,"caption":"회의에서 설명할 변화 3가지와 원본의 수치 차이를 함께 표시"},
+    {"source":"main","start":1744,"end":1752,"caption":"원본 숫자와 셀 주소까지 펼쳐 직접 대조"},
+    {"source":"main","start":129,"end":134,"caption":"BEFORE 다시 보기  |  ‘시각화 자료’라는 짧은 요청 → 고정된 요약과 차트"},
+    {"source":"main","start":1408,"end":1413,"caption":"AFTER  |  목적·동작·검증 기준을 구체화 → 연도 선택형 설명 대시보드"},
+    {"duration":4,"caption":"AI Bridge\\N요청을 구체화하고, 결과를 직접 확인하는 연습"}
+  ]
+}
